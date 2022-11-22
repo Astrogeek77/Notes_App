@@ -6,11 +6,16 @@ type NoteLayoutProps = {
 }
 
 export function NoteLayout({ notes }: NoteLayoutProps) {
+  // get id from params
   const { id } = useParams()
+
+  // find the requested note
   const note = notes.find(n => n.id === id)
 
+  // if no such note exist navigate home
   if (note == null) return <Navigate to="/" replace />
 
+  // context for parent components
   return <Outlet context={note} />
 }
 

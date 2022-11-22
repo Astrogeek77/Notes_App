@@ -5,6 +5,7 @@ import CreatableReactSelect from "react-select/creatable"
 import { NoteData, Tag } from "../App"
 import { v4 as uuidV4 } from "uuid"
 
+// prop types. Partial means the enclosed data is not required always
 type NoteFormProps = {
   onSubmit: (data: NoteData) => void
   onAddTag: (tag: Tag) => void
@@ -24,6 +25,7 @@ export function NoteForm({
   const [selectedTags, setSelectedTags] = useState<Tag[]>(tags)
   const navigate = useNavigate()
 
+  // save a note and navigate back
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
 

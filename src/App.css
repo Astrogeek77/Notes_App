@@ -1,8 +1,11 @@
 body {
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
-    background-color: lightgray;
-    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
-    background-color: #111;
+  background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
+  background-color: #1f1f1f;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png');
+  background-color: red;
+  background-color: #333;
+
+  --bs-bg-opacity: 0.5;
 }
 
 .form-control {
